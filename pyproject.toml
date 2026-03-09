@@ -1,0 +1,25 @@
+[project]
+name = "rebook2"
+version = "0.1.0"
+description = "Python project scaffolded for uv, Ruff, and ty."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
+    "ruff>=0.15.5",
+    "ty>=0.0.21",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+target-version = "py312"
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.ty]
