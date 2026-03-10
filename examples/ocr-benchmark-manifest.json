@@ -1,0 +1,10 @@
+[
+  {
+    "id": "usreports-first-pages",
+    "path": "../USREPORTS-2.pdf",
+    "pages": [1, 2, 3],
+    "metadata": {
+      "notes": "Small starter slice for speed benchmarking."
+    }
+  }
+]

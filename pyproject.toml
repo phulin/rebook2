@@ -6,10 +6,18 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "accelerate>=1.10.0",
+    "easyocr>=1.7.2",
+    "glmocr",
+    "matplotlib>=3.10.8",
+    "mplcursors>=0.7",
     "paddleocr>=3.4.0",
+    "paddlepaddle>=3.3.0",
     "pillow>=12.1.1",
+    "pypdfium2>=5.6.0",
+    "python-doctr>=1.0.1",
     "torch>=2.8.0",
     "transformers>=5.0.0",
+    "vllm[none]>=0.11.0",
 ]
 
 [dependency-groups]
@@ -21,6 +29,9 @@ dev = [
 
 [tool.uv]
 package = false
+
+[tool.uv.sources]
+glmocr = { git = "https://github.com/zai-org/GLM-OCR" }
 
 [tool.ruff]
 target-version = "py312"
